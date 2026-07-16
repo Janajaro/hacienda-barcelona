@@ -1,0 +1,134 @@
+.home-main {
+  min-height: 100vh;
+  background-color: var(--neutral-color);
+  color: var(--neutral-complementary);
+}
+
+.home-hero {
+  width: min(100% - 4rem, 1260px);
+  margin: 0 auto;
+  padding: 4rem 0 3rem;
+
+  display: grid;
+  grid-template-columns: minmax(0, 58%) minmax(0, 42%);
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.home-text {
+  min-width: 0;
+}
+
+.home-annotation {
+  margin: 0;
+
+  font-family: var(--font-bold-decorative);
+  font-size: 1.8rem;
+  line-height: 1.05;
+  color: var(--neutral-complementary);
+
+  overflow-wrap: break-word;
+}
+
+.highlight {
+  color: var(--dark-color);
+}
+
+/* Wrapper obsahuje obrázek i kredit, proto nemá pevnou výšku */
+
+.home-image-wrapper {
+  width: 100%;
+  margin: 4rem 0 0;
+}
+
+/* Všechny fotografie mají stejnou velikost */
+
+.home-image {
+  display: block;
+  width: 100%;
+  height: clamp(28rem, 43vw, 42rem);
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 25px 0 25px 0;
+}
+
+.home-photo-credit {
+  margin: 0.2rem 0 0;
+
+  font-family: var(--font-normal);
+  font-size: 0.65rem;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+/* Menší notebooky a tablety */
+
+@media (max-width: 1100px) {
+  .home-hero {
+    width: min(100% - 3rem, 960px);
+    grid-template-columns: minmax(0, 55%) minmax(0, 45%);
+    gap: 0.5rem;
+  }
+
+  .home-annotation {
+    font-size: clamp(1.5rem, 2.7vw, 2.2rem);
+  }
+
+  .home-image-wrapper {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .home-image {
+    height: clamp(25rem, 48vw, 36rem);
+  }
+}
+
+/* Mobil */
+
+@media (max-width: 760px) {
+  .home-hero {
+    width: calc(100% - 2rem);
+    padding: 2rem 0;
+
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .home-annotation {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+    line-height: 1.05;
+  }
+
+  .home-image-wrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .home-image {
+    width: 100%;
+    height: clamp(22rem, 115vw, 34rem);
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Menší mobily */
+
+@media (max-width: 480px) {
+  .home-hero {
+    width: calc(100% - 1.5rem);
+    padding: 1.5rem 0 2rem;
+  }
+
+  .home-image {
+    height: 28rem;
+  }
+
+  .home-photo-credit {
+    font-size: 0.6rem;
+  }
+}

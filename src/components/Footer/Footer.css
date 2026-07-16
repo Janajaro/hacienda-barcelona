@@ -1,0 +1,23 @@
+.footer-main {
+  background-color: var(--neon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;  
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.footer-main a {
+  color: var(--dark-color);
+  font-family: var(--font-normal);
+  text-decoration: none;
+}
+
+.footer-main a:hover {
+    color: var(--neutral-complementary);
+}

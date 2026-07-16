@@ -1,0 +1,12 @@
+:root {
+    --font-bold-decorative: "Sekuya", system-ui;
+    --font-normal: "Poppins", sans-serif;
+    --dark-color: #340C0C;
+    --bright-color: #FFE224;
+    --neon-color: #ed4cff;
+    --neutral-color: #7C6A0A;
+    --neutral-complementary: #BABD8D;
+    --font-big: 4.5rem;
+    --font-small: 1rem;
+    --margin-small: 0.25rem;
+}
