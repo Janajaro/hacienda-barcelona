@@ -1,0 +1,16 @@
+{
+  "cs": {
+    "heading": "lístky",
+    "textBeforeLink": "✲Lístky se dají zakoupit skrz platformu",
+    "linkText": "GoOut",
+    "ticketUrl": "https://goout.net",
+    "textAfterLink": "nebo přímo na festivalu při příjezdu."
+  },
+  "en": {
+    "heading": "tickets",
+    "textBeforeLink": "✲Tickets can be purchased via",
+    "linkText": "GoOut",
+    "ticketUrl": "https://goout.net/en/",
+    "textAfterLink": "or at the festival upon arrival."
+  }
+}

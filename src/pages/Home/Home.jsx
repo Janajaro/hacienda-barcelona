@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { translations } from "../../data/translations.jsx";
+import { useEffect, useState } from "react";
 
+import homeContent from "../../content/home.json";
 import "./Home.css";
 
 const Home = () => {
   const { lang } = useParams();
-  const t = translations[lang] || translations.cs;
+
+  const currentContent = homeContent[lang] || homeContent.cs;
 
   const [imgNumber, setImgNumber] = useState(1);
 
@@ -22,7 +23,15 @@ const Home = () => {
     <main className="home-main">
       <section className="home-hero">
         <div className="home-text">
-          <p className="home-annotation">{t.annotation}</p>
+          <p className="home-annotation">
+            {currentContent.textBeforeHighlight}{" "}
+
+            <span className="highlight">
+              {currentContent.highlightedText}
+            </span>{" "}
+
+            {currentContent.textAfterHighlight}
+          </p>
         </div>
 
         <figure className="home-image-wrapper">

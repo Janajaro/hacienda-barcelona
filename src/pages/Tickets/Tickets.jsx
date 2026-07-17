@@ -1,14 +1,15 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
+import ticketsContent from "../../content/tickets.json";
 import "./Tickets.css";
-import { translations } from "../../data/translations";
 
 const Tickets = () => {
   const [imgNumber, setImgNumber] = useState(1);
   const { lang } = useParams();
 
-  const t = translations[lang] || translations.cs;
+  const currentContent =
+    ticketsContent[lang] || ticketsContent.cs;
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -22,7 +23,24 @@ const Tickets = () => {
     <main className="tickets-main">
       <section className="tickets-content">
         <div className="tickets-text">
-          <h1>{t.tickets}</h1>
+
+          <h1>
+            {currentContent.textBeforeLink}{" "}
+            
+            {currentContent.ticketUrl ? (
+              <a
+                href={currentContent.ticketUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {currentContent.linkText}
+              </a>
+            ) : (
+              <span>{currentContent.linkText}</span>
+            )}{" "}
+
+            {currentContent.textAfterLink}
+          </h1>
         </div>
 
         <figure className="tickets-image-wrapper">

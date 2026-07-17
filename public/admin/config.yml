@@ -68,7 +68,7 @@ collections:
         name: "img"
         widget: "image"
         required: true
-        
+
   - name: "pages"
     label: "Pages"
 
@@ -111,5 +111,169 @@ collections:
 
               - label: "Text"
                 name: "text"
+                widget: "text"
+                required: true
+  - name: "pages"
+    label: "Pages"
+
+    files:
+      - name: "more-info"
+        label: "More info"
+        file: "src/content/info.json"
+
+        fields:
+          - label: "Czech sections"
+            name: "cs"
+            widget: "list"
+            label_singular: "Czech section"
+            collapsed: false
+            summary: "{{fields.header}}"
+
+            fields:
+              - label: "Heading"
+                name: "header"
+                widget: "string"
+                required: true
+
+              - label: "Text"
+                name: "text"
+                widget: "text"
+                required: true
+
+          - label: "English sections"
+            name: "en"
+            widget: "list"
+            label_singular: "English section"
+            collapsed: false
+            summary: "{{fields.header}}"
+
+            fields:
+              - label: "Heading"
+                name: "header"
+                widget: "string"
+                required: true
+
+              - label: "Text"
+                name: "text"
+                widget: "text"
+                required: true
+
+      - name: "tickets"
+        label: "Tickets"
+        file: "src/content/tickets.json"
+
+        fields:
+          - label: "Czech version"
+            name: "cs"
+            widget: "object"
+            collapsed: false
+
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: true
+
+              - label: "Text before link"
+                name: "textBeforeLink"
+                widget: "text"
+                required: true
+
+              - label: "Link text"
+                name: "linkText"
+                widget: "string"
+                required: true
+                hint: "For example GoOut."
+
+              - label: "Ticket link"
+                name: "ticketUrl"
+                widget: "string"
+                required: false
+                hint: "Insert the complete link beginning with https://"
+
+              - label: "Text after link"
+                name: "textAfterLink"
+                widget: "text"
+                required: true
+
+          - label: "English version"
+            name: "en"
+            widget: "object"
+            collapsed: false
+
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: true
+
+              - label: "Text before link"
+                name: "textBeforeLink"
+                widget: "text"
+                required: true
+
+              - label: "Link text"
+                name: "linkText"
+                widget: "string"
+                required: true
+                hint: "For example GoOut."
+
+              - label: "Ticket link"
+                name: "ticketUrl"
+                widget: "string"
+                required: false
+                hint: "Insert the complete link beginning with https://"
+
+              - label: "Text after link"
+                name: "textAfterLink"
+                widget: "text"
+                required: true
+                
+      - name: "home"
+        label: "Home"
+        file: "src/content/home.json"
+
+        fields:
+          - label: "Czech version"
+            name: "cs"
+            widget: "object"
+            collapsed: false
+
+            fields:
+              - label: "Text before highlighted section"
+                name: "textBeforeHighlight"
+                widget: "text"
+                required: true
+
+              - label: "Highlighted text"
+                name: "highlightedText"
+                widget: "text"
+                required: true
+                hint: "This section will be displayed in the accent colour."
+
+              - label: "Text after highlighted section"
+                name: "textAfterHighlight"
+                widget: "text"
+                required: true
+
+          - label: "English version"
+            name: "en"
+            widget: "object"
+            collapsed: false
+
+            fields:
+              - label: "Text before highlighted section"
+                name: "textBeforeHighlight"
+                widget: "text"
+                required: true
+
+              - label: "Highlighted text"
+                name: "highlightedText"
+                widget: "text"
+                required: true
+                hint: "This section will be displayed in the accent colour."
+
+              - label: "Text after highlighted section"
+                name: "textAfterHighlight"
                 widget: "text"
                 required: true

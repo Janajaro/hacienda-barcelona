@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { translations } from "../../data/translations.jsx";
+import { translations } from "../../data/translations";
 
 const Header = ({ lang }) => {
   const currentLang = lang || "cs";
