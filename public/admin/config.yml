@@ -1,0 +1,70 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: "en"
+
+collections:
+  - name: "bands"
+    label: "Bands"
+    label_singular: "Band"
+    folder: "src/content/bands"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    identifier_field: "name"
+    summary: "{{name}}"
+
+    fields:
+      - label: "Band name"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true
+        hint: "URL identifier without spaces or accents, for example barbora-hora."
+
+      - label: "Annotation"
+        name: "annotation"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: "Czech"
+            name: "cs"
+            widget: "text"
+            required: true
+
+          - label: "English"
+            name: "en"
+            widget: "text"
+            required: true
+
+      - label: "Show date"
+        name: "showDate"
+        widget: "string"
+        required: true
+        hint: "For example 8.8.2026."
+
+      - label: "Show time"
+        name: "showTime"
+        widget: "string"
+        required: true
+        hint: "For example 18:00."
+
+      - label: "Stage"
+        name: "stage"
+        widget: "string"
+        required: true
+
+      - label: "Band image"
+        name: "img"
+        widget: "image"
+        required: true
