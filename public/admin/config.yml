@@ -90,10 +90,6 @@ collections:
             name: "cs"
             widget: "object"
             fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-
               - label: "Text before link"
                 name: "textBeforeLink"
                 widget: "text"
@@ -115,10 +111,6 @@ collections:
             name: "en"
             widget: "object"
             fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-
               - label: "Text before link"
                 name: "textBeforeLink"
                 widget: "text"
