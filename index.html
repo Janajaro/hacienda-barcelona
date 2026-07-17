@@ -13,5 +13,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+  const identityHashKeys = [
+    "invite_token",
+    "confirmation_token",
+    "recovery_token",
+  ];
+
+  const hasIdentityToken = identityHashKeys.some((key) =>
+    window.location.hash.includes(key),
+  );
+
+  if (hasIdentityToken && !window.location.pathname.startsWith("/admin")) {
+    window.location.href = `/admin/${window.location.hash}`;
+  }
+</script>
   </body>
 </html>
