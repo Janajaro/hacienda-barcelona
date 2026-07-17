@@ -68,3 +68,48 @@ collections:
         name: "img"
         widget: "image"
         required: true
+        
+  - name: "pages"
+    label: "Pages"
+
+    files:
+      - name: "more-info"
+        label: "More info"
+        file: "src/content/info.json"
+
+        fields:
+          - label: "Czech sections"
+            name: "cs"
+            widget: "list"
+            label_singular: "Czech section"
+            collapsed: false
+            summary: "{{fields.header}}"
+
+            fields:
+              - label: "Heading"
+                name: "header"
+                widget: "string"
+                required: true
+
+              - label: "Text"
+                name: "text"
+                widget: "text"
+                required: true
+
+          - label: "English sections"
+            name: "en"
+            widget: "list"
+            label_singular: "English section"
+            collapsed: false
+            summary: "{{fields.header}}"
+
+            fields:
+              - label: "Heading"
+                name: "header"
+                widget: "string"
+                required: true
+
+              - label: "Text"
+                name: "text"
+                widget: "text"
+                required: true
