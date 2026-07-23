@@ -1,12 +1,12 @@
 {
+  "name": "workshop kyanotypie",
   "annotation": {
-    "cs": "Pokračujeme s úspěšnou přeskarpatskou spoluprací.\nZabiť Františka je pseudonym slovenského písničkáře Samuela Kovalčíka, který před pěti lety zaujal osobitým alt-folkovým debutem a předloni navázal druhým albem. \nSamuel se primárně věnuje mezilidským vztahům. Poetické texty s intimními příběhy o stereotypech, křivdách a defektech současného světa ale skrze osobní výpovědi nastavují zrcadlo společnosti jako celku.\nJako by si lidová balada dala rande s městskou neurózou.\n",
-    "en": "We’re continuing our successful collaboration across the Carpathians.\nZabiť Františka is the pseudonym of Slovak singer-songwriter Samuel Kovalčík, who made a name for himself five years ago with a distinctive alt-folk debut and followed it up with a second album the year before last.\nSamuel focuses primarily on interpersonal relationships. His poetic lyrics, with their intimate stories about stereotypes, injustices, and the flaws of the modern world, hold up a mirror to society as a whole through personal narratives.\nIt’s as if a folk ballad had gone on a date with urban neurosis.\n"
+    "cs": "Pod vedením Jáchyma Myslivce (FUD UJEP) fotografického eskamotéra, analogového experimentátora, fotografa a umělce v jedné osobě, proběhne workshop kyanotypie. Budete mít tak možnost otisknout si kousek novohradských hor i zvěčnit vzpomínku na festival. A to vše modré na bílém v sobotu od 12:30\n",
+    "en": "Led by Jáchym Myslivec (FUD UJEP)—a photographic conjurer, analog experimenter, photographer, and artist all rolled into one—a cyanotype workshop will take place. You’ll have the chance to capture a piece of the Novohradské Mountains and preserve a memory of the festival. All in blue on white, this Saturday starting at 12:30 p.m.\n"
   },
-  "name": "Zabiť Františka",
-  "slug": "zabit-frantiska",
+  "slug": "workshop-kyanotypie",
   "showDate": "8.8.",
-  "showTime": "14:00",
+  "showTime": "12:30",
   "stage": "venku",
-  "img": "/uploads/zabiť-františka.jpg"
+  "img": "/uploads/3aa42696-ce15-4c4c-8f17-2cd87ea7d521.jpg"
 }
