@@ -1,0 +1,12 @@
+{
+  "name": "Komentovaná procházka",
+  "slug": "komentovana-prochazka",
+  "annotation": {
+    "cs": "bude",
+    "en": "bude"
+  },
+  "showDate": "8.8.",
+  "showTime": "11:00",
+  "stage": "po okolí",
+  "img": "/uploads/04-echo-atlas.jpg"
+}
