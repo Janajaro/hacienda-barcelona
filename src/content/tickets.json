@@ -1,14 +1,14 @@
 {
   "cs": {
     "textBeforeLink": "✲Lístky se dají zakoupit skrz platformu",
-    "linkText": "GoOut",
-    "ticketUrl": "https://goout.net",
-    "textAfterLink": "nebo přímo na festivalu při příjezdu."
+    "linkText": "smsticket",
+    "ticketUrl": "https://www.smsticket.cz/vstupenky/69957-hacienda-barcelona-2026-hacienda-barcelona-horni-stropnice",
+    "textAfterLink": "a pokud se kapacita nevyprodá v předprodeji, tak i přímo na festivalu při příjezdu. "
   },
   "en": {
     "textBeforeLink": "✲Tickets can be purchased via",
-    "linkText": "GoOut",
-    "ticketUrl": "https://goout.net/en/",
+    "linkText": "smsticket",
+    "ticketUrl": "https://www.smsticket.cz/vstupenky/69957-hacienda-barcelona-2026-hacienda-barcelona-horni-stropnice",
     "textAfterLink": "or at the festival upon arrival."
   }
 }
