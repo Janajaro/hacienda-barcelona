@@ -13,9 +13,7 @@ const BandsSection = () => {
     );
   };
 
-  const sortedBands = [...bands].sort((a, b) =>
-    a.name.localeCompare(b.name, "cs", { sensitivity: "base" })
-  );
+  const sortedBands = [...bands].sort((a, b) => a.order - b.order);
 
   return (
     <div className="bands-container">
@@ -24,9 +22,7 @@ const BandsSection = () => {
 
         return (
           <div key={oneBand.slug} className="band">
-
             <div className="band-title-row">
-
               <button
                 type="button"
                 className={isOpen ? "band-button active" : "band-button"}
@@ -34,11 +30,9 @@ const BandsSection = () => {
               >
                 {oneBand.name}
               </button>
-
             </div>
 
             {isOpen && <BandCard band={oneBand} />}
-
           </div>
         );
       })}

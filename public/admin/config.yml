@@ -56,6 +56,11 @@ collections:
         name: "img"
         widget: "image"
 
+      - label: "Order number"
+        name: "order"
+        widget: "number"
+        required: true
+
   - name: "pages"
     label: "Pages"
 
