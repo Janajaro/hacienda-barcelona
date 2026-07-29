@@ -1,10 +1,10 @@
 {
-  "order": 14,
+  "order": 10,
   "name": "Komentovaná procházka",
   "slug": "komentovana-prochazka",
   "annotation": {
-    "cs": "bude",
-    "en": "bude"
+    "cs": "Pro ty, kdo před uměleckou reprodukcí dávají přednost pomíjivé zkušenosti nebo jsou prostě nešikovní, máme opět velice zajímavou a extrémně poučnou procházku okolní přírodou.\nEdukace se letos ujme Martin Kolář. Ten kromě chalupy ve vedlejší vsi vládne i sloní pamětí, neváhejte se ho doptávat na cokoli. Tabu je jen otázka, kdo v jejich chalupě bydlel před rokem 1945.\n",
+    "en": "For those who prefer fleeting experiences to artistic reproductions—or who are simply clumsy—we once again have a very interesting and extremely informative walk through the surrounding countryside.\nMartin Kolář will be leading the educational tour this year. In addition to owning a cottage in the neighboring village, he has an elephant’s memory—so don’t hesitate to ask him anything. The only off-limits topic is who lived in their cottage before 1945."
   },
   "showDate": "8.8.",
   "showTime": "11:00",
